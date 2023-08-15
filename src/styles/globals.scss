@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+@import './abstract/mixins';
+@import './abstract/constants';
+@import './abstract/placeholder';
+
+@import './base/base';
+@import './base/wrapper';
+
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/nav.scss';
+@import './components/services.scss';
+@import './components/button.scss';
+@import './components/socials.scss';
+@import './components/who.scss';
+@import './components/podcast.scss';
+@import './components/blogger.scss';
+@import './components/blogger-mobile.scss';
+@import './components/tobegin.scss';
+@import './components/link-button.scss';

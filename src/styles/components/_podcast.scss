@@ -1,0 +1,41 @@
+.podcast {
+  padding: 80px 0;
+  @include media-desktop{
+    padding: 70px 0;
+  }
+  @include media-mobile{
+    padding: 0 0 50px;
+  }
+}
+.podcast__line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-bottom: 60px;
+  @include media-desktop {
+    margin-bottom: 30px;
+    .podcast__decor {
+      display: none;
+    }
+  }
+}
+.podcast__text {
+  width: 330px;
+  align-self: start;
+  @include font($size: 1.8rem, $height: 2.3rem);
+  text-align: center;
+  p {
+    margin: 40px 0;
+    @include media-desktop{
+      margin: 20px 0;
+    }
+  }
+  a {
+    color: $color-accent;
+  }
+  @include media-desktop {
+    align-self: center;
+    width: 100%;
+  }
+}

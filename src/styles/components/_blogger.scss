@@ -1,0 +1,58 @@
+.blogger {
+  width: 310px;
+  height: 285px;
+  @include media-mobile {
+    width: 207px;
+    height: auto;
+  }
+}
+.blogger__line {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+  justify-content: center;
+  margin-bottom: 60px;
+  &--wide {
+    justify-content: space-between;
+  }
+  @include media-desktop {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  @include media-mobile {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+.blogger__img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.blogger__title {
+  display: flex;
+  align-items: baseline;
+  margin: -50px 0 0;
+  padding: 0 4px;
+  @include media-desktop{
+    margin: -30px 0 0;
+  }
+}
+.blogger__border {
+  border-bottom: dotted;
+  flex-grow: 1;
+}
+.play {
+  margin-right: 16px;
+  top: 4px;
+  position: relative;
+  @include media-mobile {
+    margin-right: 10px;
+    top: 2px;
+    width: 21px;
+    height: 14px;
+  }
+}

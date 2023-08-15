@@ -1,0 +1,12 @@
+.blogger-mobile {
+  width: 200px;
+}
+.blogger-mobile__title {
+  display: flex;
+  align-items: baseline;
+  margin: -30px 0 0;
+  padding: 0 4px;
+  & > span {
+    @include font($size: 1.4rem, $height: 1.8rem);
+  }
+}

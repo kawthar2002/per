@@ -1,0 +1,54 @@
+.services {
+  .num {
+    color: $color-accent;
+    @extend %transition;
+  }
+}
+.services__nav {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+  justify-content: space-between;
+  text-transform: uppercase;
+  @include media-desktop {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.services__link {
+  @extend %transition;
+  padding: 0 20px;
+  max-width: 250px;
+  &:hover {
+    .num {
+      color: $color-text;
+    }
+    .num__line {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  @include media-desktop {
+    max-width: unset;
+    padding: 0;
+  }
+}
+.services__title {
+  @include media-desktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+  }
+}
+.num__line {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  gap: 14px;
+  > img {
+    opacity: 0;
+    @extend %transition;
+  }
+}

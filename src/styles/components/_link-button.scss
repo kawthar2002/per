@@ -1,0 +1,35 @@
+.link-button {
+  padding: 35px 57px;
+  color: $color-light;
+  background-color: $color-accent;
+  border-radius: 10px;
+  @extend %transition;
+  border: 3px solid transparent;
+  width: 420px;
+  @include media-desktop{
+    padding: 20px 35px;
+    max-width: 300px;
+  }
+
+  & > a > svg {
+    color: $color-light;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: $color-light;
+    color: $color-text;
+    border: 3px solid $color-text;
+    & > a > svg {
+      color: $color-text;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+.link-button__text {
+  max-width: 234px;
+}

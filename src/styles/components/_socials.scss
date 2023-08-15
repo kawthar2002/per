@@ -1,0 +1,37 @@
+.socials__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0 0;
+}
+.socials__link {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: $color-light;
+  @extend %transition;
+  &:hover {
+    background-color: $color-accent;
+  }
+  @include media-desktop {
+    width: 60px;
+    height: 60px;
+  }
+  img{
+    @include media-desktop{
+      width: 33px;
+      height: 33px;
+    }
+  }
+}
+.socials__title {
+  color: $color-light;
+  text-align: center;
+  @include media-mobile{
+    font-size: 1.6rem;
+
+  }
+}

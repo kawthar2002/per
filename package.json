@@ -11,8 +11,12 @@
   "dependencies": {
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
+    "export": "next export",
     "next": "13.4.16",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.65.1"
   }
 }
